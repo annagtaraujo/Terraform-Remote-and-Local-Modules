@@ -43,3 +43,26 @@ output "public_route_table_ids_b" {
 output "private_route_table_ids_b" {
     value = module.vpc_b.private_route_table_ids
 }
+###############################################################################
+
+##Outputs VPC C
+
+output "vpc_id_c"{
+    value = module.vpc_c.vpc_id
+}
+
+output "public_subnet_ids_c"{
+    value = module.vpc_c.public_subnets
+}
+
+output "cidr_block_c"{
+    value = module.vpc_c.vpc_cidr_block
+}
+
+output "public_route_table_ids_c" {
+  value       = module.vpc_c.public_route_table_ids
+}
+
+output "private_route_table_ids_c" {
+    value = module.vpc_c.private_route_table_ids
+}

@@ -21,19 +21,6 @@ module "vpc_c" {
   #enable_vpn_gateway     = true
   enable_dns_hostnames    = true
 
-## Para usar esse aqui, preciso mudar no módulo principal tudo que for security group default, pois não quero usá-lo
-  # manage_security_group  = true
-  # security_group_ingress = [
-  #   {cidr_block = "0.0.0.0/0",from_port = 22, to_port = 22, protocol = "SSH"},
-  #   {cidr_block = "0.0.0.0/0",from_port = 80, to_port = 80, protocol = "TCP"}, 
-  #   {cidr_block = "0.0.0.0/0",from_port = 443, to_port = 443, protocol = "TCP"},
-  #   {cidr_block = "0.0.0.0/0",from_port = 0, to_port = 0, protocol = "ICMP"}]
-  # security_group_egress  = [{cidr_block = "0.0.0.0/0",from_port = 0, to_port = 0}]
-  # security_group_name = "VPC-C-SG"
-  # security_group_tags = {
-  #   Name = "VPC-C-SG"
-  #   }
-
    tags = {
      Terraform   = "true"
      Environment = "prod"

@@ -1,0 +1,10 @@
+#Key Pair
+
+module "ingress-keypair" {
+  source = "../modules/key"
+
+  infra_name = var.infra_name
+
+  key_name   = var.key_name
+  public_key = var.public_key
+}

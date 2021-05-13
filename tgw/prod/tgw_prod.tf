@@ -13,7 +13,7 @@ resource "aws_ec2_transit_gateway" "tgw" {
   dns_support = "enable"
 
   tags =  {
-    Name = format("%s-Transit-Gateway-Public",var.infra_name)
+    Name = format("%s-Transit-Gateway-Prod",var.infra_name)
   }
 
 }
